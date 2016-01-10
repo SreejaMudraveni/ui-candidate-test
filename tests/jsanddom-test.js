@@ -13,6 +13,14 @@ test( "Example Test", 2, function() {
 Please create your tests below...
 ********************************/
 
+test( "splitListStrUsingComma Test",function() {  
+	equal( typeof splitListStrUsingComma, 'function', 'Must contain a splitListStrUsingComma function' );   
+	var str = "How are you doing today?";  
+	ok(splitListStrUsingComma(str), ["How","are","you","doing","today?"], 'the result was: ' + splitListStrUsingComma(str));  
+	var strNull = null;   
+	ok(splitListStrUsingComma(strNull), [], 'the result was: ' + splitListStrUsingComma(strNull));  
+}); 
+
 test( "pushOntoArray Test",function() {  
 	equal( typeof pushOntoArray, 'function', 'Must contain a pushOntoArray function' );   
 	var pushArr1 = ['push1','push2', 'push3', 'push4'];  
