@@ -12,6 +12,16 @@ test( "Example Test", 2, function() {
 /********************************
 Please create your tests below...
 ********************************/
+
+test( "pushOntoArray Test",function() {  
+	equal( typeof pushOntoArray, 'function', 'Must contain a pushOntoArray function' );   
+	var pushArr1 = ['push1','push2', 'push3', 'push4'];  
+	var pushArr2 = ['push5', 'push6', 'push7'];  
+	pushOntoArray(pushArr1,pushArr2)  
+	ok(pushArr1.length, 7, 'the result was: ' + pushArr1.length);  
+});  
+
+
 test( "reverseString Test",function() {  
 	equal( typeof reverseString, 'function', 'Must contain a reverseString function' );   
 	ok(reverseString('sreeja'), 'ajeers', 'the result was: ' + reverseString('sreeja') );  
