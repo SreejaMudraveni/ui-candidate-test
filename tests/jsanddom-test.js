@@ -33,3 +33,10 @@ test( "doFizzBuzz Test",function() {
 	equal( typeof doFizzBuzz, 'function', 'Must contain a doFizzBuzz function' );   
 	ok(doFizzBuzz(), true, 'the result was: ' + doFizzBuzz());  
  });  
+
+
+test( "removeFruits Test",function() {  
+
+	equal( typeof removeFruits, 'function', 'Must contain a removeFruits function' );   
+	ok(removeFruits(["apple", "orange", "mango", "peach", "grape"], ["apple","grape"]),["orange","mango","peach","grape"], 'the result was: ' + removeFruits(["apple", "orange", "mango", "peach", "grape"], ["apple","grape"]));
+ });  
