@@ -27,3 +27,9 @@ test( "findDistinctValues Test",function() {
 	equal( typeof findDistinctValues, 'function', 'Must contain a findDistinctValues function' );   
  	ok(findDistinctValues(["sreeja", "lalit", "madhu", "sreeja"]), ["sreeja", "lalit", "madhu"], 'the result was: ' + findDistinctValues(["sreeja", "lalit", "madhu", "sreeja"]) );  
  });  
+
+test( "doFizzBuzz Test",function() {  
+
+	equal( typeof doFizzBuzz, 'function', 'Must contain a doFizzBuzz function' );   
+	ok(doFizzBuzz(), true, 'the result was: ' + doFizzBuzz());  
+ });  
