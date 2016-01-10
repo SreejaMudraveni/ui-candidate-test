@@ -16,4 +16,9 @@ test( "reverseString Test",function() {
 	equal( typeof reverseString, 'function', 'Must contain a reverseString function' );   
 	ok(reverseString('sreeja'), 'ajeers', 'the result was: ' + reverseString('sreeja') );  
 });  
+test( "findMinValue Test",function() {  
+
+	equal( typeof findMinValue, 'function', 'Must contain a findMinValue function' );   
+	ok(findMinValue([121,32,103,956]), 32, 'the result was: ' + findMinValue([121,32,103,956]) );  
+});  
 
