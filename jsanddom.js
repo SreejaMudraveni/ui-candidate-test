@@ -124,6 +124,7 @@
             return count;
         }
        return counter; //This is the closure. It holds count in its environment
+       
     }
      // define a json object that represents a collection of people.
      // each person should have the following properties
