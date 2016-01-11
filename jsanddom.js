@@ -96,15 +96,35 @@
      // Write a function that will take any number of arguments and return their sum
      function sum() {
          // FILL THIS IN
+         var sum = 0;
+               for (var i=0; i < arguments.length; i++) {
+                    sum += arguments[i];
+        }
+        return sum;
      }
 
      // Write a function that will return true if a specified string consists of only whitespace.
      function isOnlyWhitespace(sourceStr) {
          // FILL THIS IN
+         if (myString && !myString.trim()) {
+               return true;
+          }
+          return false;
      }
 
      // write an example of a javascript closure
-
+    function makeCounter() {
+            var count = 0;//Here, we’re putting the count variable in
+                          //the function makeCounter. So now count
+                          //is a local variable, not a global variable.
+        function counter() {  //Now, we create the counter
+                              //function, which increments
+                              //the count variable.
+            count = count + 1;
+            return count;
+        }
+       return counter; //This is the closure. It holds count in its environment
+    }
      // define a json object that represents a collection of people.
      // each person should have the following properties
      // - first name
