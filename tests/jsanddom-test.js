@@ -15,7 +15,7 @@ Please create your tests below...
 
 test( "splitListStrUsingComma Test",function() {  
 	equal( typeof splitListStrUsingComma, 'function', 'Must contain a splitListStrUsingComma function' );   
-	var str = "How are you doing today?";  
+	var str = "How,are,you,doing,today?";  
 	ok(splitListStrUsingComma(str), ["How","are","you","doing","today?"], 'the result was: ' + splitListStrUsingComma(str));  
 	var strNull = null;   
 	ok(splitListStrUsingComma(strNull), [], 'the result was: ' + splitListStrUsingComma(strNull));  
