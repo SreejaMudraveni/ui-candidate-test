@@ -72,3 +72,10 @@ test( "removeFruits Test",function() {
 	equal( typeof removeFruits, 'function', 'Must contain a removeFruits function' );   
 	ok(removeFruits(["apple", "orange", "mango", "peach", "grape"], ["apple","grape"]),["orange","mango","peach","grape"], 'the result was: ' + removeFruits(["apple", "orange", "mango", "peach", "grape"], ["apple","grape"]));
  });  
+
+test( "makeCounter Test",function() {
+    // Verify the method exists
+    equal( typeof makeCounter, 'function', 'Must contain a makeCounter function' ); 
+    ok(makeCounter(), 1, 'the result was: ' + makeCounter());
+    ok(makeCounter(), 2, 'the result was: ' + makeCounter());
+});
