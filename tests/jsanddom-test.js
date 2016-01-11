@@ -13,6 +13,20 @@ test( "Example Test", 2, function() {
 Please create your tests below...
 ********************************/
 
+test( "sum Test",function() {
+    // Verify the method exists
+    equal( typeof sum, 'function', 'Must contain a sum function' ); 
+    ok(sum(3,6,3,10), 22, 'the result was: ' + sum(3,6,3,10));
+    ok(sum(5,4,7,20,40), 76, 'the result was: ' + sum(5,4,7,20,40));
+});
+
+test( "isOnlyWhitespace Test",function() {
+    // Verify the method exists
+    equal( typeof isOnlyWhitespace, 'function', 'Must contain a isOnlyWhitespace function' ); 
+    ok(isOnlyWhitespace("   "), true, 'the result was: ' + isOnlyWhitespace("   "));
+});
+
+
 test( "splitListStrUsingComma Test",function() {  
 	equal( typeof splitListStrUsingComma, 'function', 'Must contain a splitListStrUsingComma function' );   
 	var str = "How,are,you,doing,today?";  
