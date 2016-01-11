@@ -134,7 +134,42 @@
      // - state
      // - zip
      // - a collection of phone numbers (home, work, mobile)
+     
+     //HERE IS THE PERSON EXAMPLE WITH DUMMY VALUES
+/*
 
+{
+    "people": {
+           {
+                "firstName": "first",
+                "lastName":"last",
+                "City":"dallas",
+                "State":"tx",
+                "Zip":"75075",
+                "PhoneNumbers": {
+                    "home":"1231235678",
+                    "work":"4564567890",
+                    "mobile":"5675677890"			
+                }   
+           },
+           {
+                "firstName": "first1",
+                "lastName":"last1",
+                "City":"dallas",
+                "State":"tx",
+                "Zip":"75043",
+                "PhoneNumbers": {
+                    "home":"1231235678",
+                    "work":"4564567890",
+                    "mobile":"5675677890"			
+                }   
+           }
+        
+    }
+}
+
+
+*/
 
      // Create a javascript object (DataTable) with the following:
      // A private columns property (string array)
