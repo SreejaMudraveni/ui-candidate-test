@@ -85,7 +85,7 @@
          // FILL THIS IN
          	var splitString = [];  
      	if(sourceStr !== null && sourceStr !== undefined && sourceStr !== ''){  
-     		splitString = sourceStr.split(" ");  
+     		splitString = sourceStr.split(",");  
      		return splitString;  
      	}  
      	else{  
